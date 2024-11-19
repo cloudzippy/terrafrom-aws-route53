@@ -12,7 +12,7 @@ variable "domain_name" {
 variable "vpc_id" {
   description = "The ID of the VPC for a private hosted zone (only used if private)"
   type        = list(string)
-  
+  default = null
 }
 
 variable "tags" {
